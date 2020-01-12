@@ -5,6 +5,7 @@ module.exports = {
     'plugin:react-native/all',
     'plugin:@typescript-eslint/recommended',
     'prettier',
+    "plugin:react/recommended",
     'plugin:prettier/recommended',
     'prettier/react',
     'prettier/@typescript-eslint',
@@ -36,6 +37,7 @@ module.exports = {
     'import/no-extraneous-dependencies': 0,
     '@typescript-eslint/no-var-requires': 0,
     'global-require': 0,
+    'react/state-in-constructor': 0,
     'linebreak-style': [2, 'unix'],
     'prefer-const': 0,
     'no-console': [
