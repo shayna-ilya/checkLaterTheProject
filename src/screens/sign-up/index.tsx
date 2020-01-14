@@ -1,6 +1,10 @@
 import React from 'react';
-import { View } from 'react-native';
+import { TextInput, View } from 'react-native';
 
 export const SignUpScreen: React.FC = () => {
-    return <View></View>;
+    return (
+        <View>
+            <TextInput placeholder={'dick'}/>
+        </View>
+    );
 };
