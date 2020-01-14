@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactNative, { TextInputProps, TouchableWithoutFeedback } from 'react-native';
+import ReactNative, { TouchableWithoutFeedback, ViewStyle } from 'react-native';
 import styled from 'styled-components/native';
 
 const Input = styled.TextInput`
@@ -23,18 +23,20 @@ const Container = styled.View`
 
 type Props = {
     label: string;
-} & TextInputProps;
+    containerStyle: ViewStyle;
+    inputStyle: ViewStyle;
+};
 
-export const TextInput: React.FC<Props> = ({ label, ...props }) => {
+export const TextInput: React.FC<Props> = ({ label, containerStyle, inputStyle, ...props }) => {
     const inputRef = React.useRef<ReactNative.TextInput>(null);
 
     const focus = React.useCallback(() => inputRef.current?.focus(), []);
 
     return (
         <TouchableWithoutFeedback onPress={focus}>
-            <Container style={props.style}>
+            <Container style={containerStyle}>
                 <Label>{label}</Label>
-                <Input {...props} ref={inputRef} />
+                <Input style={inputStyle} ref={inputRef} />
             </Container>
         </TouchableWithoutFeedback>
     );
