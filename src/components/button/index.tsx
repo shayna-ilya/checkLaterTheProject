@@ -1,7 +1,7 @@
 import React from 'react';
-import { ImageSourcePropType, TouchableOpacity } from 'react-native';
+import { ImageSourcePropType, TouchableOpacity, ViewStyle } from 'react-native';
 import { Icon } from 'components/icon';
-import { ActivityIndicator, Container, defaultColor, defaultTextColor, IconContainer, InvisibleContainer, Title } from 'components/button/styles';
+import { ActivityIndicator, Container, ContainerMode, defaultTextColor, IconContainer, InvisibleContainer, Title } from 'components/button/styles';
 
 type Props = {
     title: string;
@@ -9,9 +9,11 @@ type Props = {
     titleColor?: string;
     icon?: ImageSourcePropType;
     loading?: boolean;
+    mode?: ContainerMode;
+    style?: ViewStyle;
 };
 
-export const Button: React.FC<Props> = ({ title, icon, loading, buttonColor, titleColor, ...props }) => {
+export const Button: React.FC<Props> = ({ title, icon, mode = 'contained', loading, buttonColor, titleColor = defaultTextColor, ...props }) => {
     const renderIcon = () => {
         if (loading) {
             return <ActivityIndicator color="#fff" />;
@@ -23,10 +25,10 @@ export const Button: React.FC<Props> = ({ title, icon, loading, buttonColor, tit
     };
 
     return (
-        <TouchableOpacity>
-            <Container style={{ backgroundColor: buttonColor || defaultColor }}>
+        <TouchableOpacity style={props.style}>
+            <Container backgroundColor={buttonColor} mode={mode}>
                 <IconContainer>{renderIcon()}</IconContainer>
-                <Title style={{ color: titleColor || defaultTextColor }}>{title}</Title>
+                <Title color={titleColor}>{title}</Title>
                 <InvisibleContainer>
                     <IconContainer>{renderIcon()}</IconContainer>
                 </InvisibleContainer>
