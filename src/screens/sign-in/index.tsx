@@ -4,6 +4,8 @@ import { Button } from 'components/button';
 import { images } from 'assets';
 import { AppText } from 'components/app-text';
 import styled from 'styled-components/native';
+import { useNavigation } from 'react-navigation-hooks';
+import { ROUTES } from '../../navigation/route-names';
 
 const ScreenContainer = styled.View`
     flex: 1;
@@ -40,13 +42,18 @@ const TopContainer = styled.View`
 `;
 
 export const SignInScreen: React.FC = () => {
+    const { navigate } = useNavigation();
+
+    const navigateToSignUpScreen = React.useCallback(() => navigate(ROUTES.signUpScreen), [navigate]);
+    const navigateToMainScreen = React.useCallback(() => navigate(ROUTES.mainScreen), [navigate]);
+
     return (
         <ScreenContainer>
             <TopContainer>
                 <AppText font="displaySemibold" size={34}>
                     Welcome Back
                 </AppText>
-                <Button mode="text" titleColor="#6979F8" title="Sign up" />
+                <Button onPress={navigateToSignUpScreen} mode="text" titleColor="#6979F8" title="Sign up" />
             </TopContainer>
 
             <LightText color="#999999" font="textLight" numberOfLines={2}>
@@ -54,7 +61,7 @@ export const SignInScreen: React.FC = () => {
             </LightText>
             <StyledInput label="Email Address" />
             <StyledInput label="Password" autoCompleteType="password" secureTextEntry />
-            <Button title="Login" titleColor="#FFFFFF" />
+            <Button title="Login" onPress={navigateToMainScreen} titleColor="#FFFFFF" />
             <Button mode="text" titleColor="#6979F8" title="Forget password" />
             <BottomContainer>
                 <BottomContainerText color="#999999" font="textLight" align="center">

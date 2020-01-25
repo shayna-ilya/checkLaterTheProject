@@ -5,6 +5,7 @@ import { ActivityIndicator, Container, ContainerMode, defaultTextColor, IconCont
 
 type Props = {
     title: string;
+    onPress?(): void;
     buttonColor?: string;
     titleColor?: string;
     icon?: ImageSourcePropType;
@@ -13,7 +14,7 @@ type Props = {
     style?: ViewStyle;
 };
 
-export const Button: React.FC<Props> = ({ title, icon, mode = 'contained', loading, buttonColor, titleColor = defaultTextColor, ...props }) => {
+export const Button: React.FC<Props> = ({ onPress, title, icon, mode = 'contained', loading, buttonColor, titleColor = defaultTextColor, ...props }) => {
     const renderIcon = () => {
         if (loading) {
             return <ActivityIndicator color="#fff" />;
@@ -25,7 +26,7 @@ export const Button: React.FC<Props> = ({ title, icon, mode = 'contained', loadi
     };
 
     return (
-        <TouchableOpacity style={props.style}>
+        <TouchableOpacity onPress={onPress} style={props.style}>
             <Container backgroundColor={buttonColor} mode={mode}>
                 <IconContainer>{renderIcon()}</IconContainer>
                 <Title color={titleColor}>{title}</Title>
