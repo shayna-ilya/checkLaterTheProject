@@ -16,6 +16,4 @@ export const Label = styled.Text`
     margin-bottom: 15px;
     text-transform: uppercase;
 `;
-export const Container = styled.View`
-    margin: 0 25px 0 25px;
-`;
+export const Container = styled.View``;

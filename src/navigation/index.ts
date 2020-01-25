@@ -5,7 +5,7 @@ import { SignUpScreen } from 'screens/sign-up';
 import { ROUTES } from 'navigation/route-names';
 
 const AuthStack = createStackNavigator({
-    [ROUTES.signInScreen]: SignInScreen,
+    [ROUTES.signInScreen]: { screen: SignInScreen, navigationOptions: { header: () => null } },
     [ROUTES.signUpScreen]: SignUpScreen,
 });
 

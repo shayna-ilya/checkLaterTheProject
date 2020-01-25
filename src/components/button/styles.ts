@@ -32,7 +32,6 @@ export const Container = styled.View<{ backgroundColor?: string; mode: Container
     align-items: center;
     justify-content: space-between;
     border-radius: 5px;
-    margin: 0 25px 0 25px;
 
     ${(props) =>
         (props.mode === 'text' &&
