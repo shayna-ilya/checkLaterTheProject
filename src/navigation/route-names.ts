@@ -4,4 +4,5 @@ export const ROUTES = {
     signUpScreen: 'SIGN_UP_SCREEN',
     mainStack: 'MAIN_STACK',
     mainScreen: 'MAIN_SCREEN',
+    listScreen: 'LIST_SCREEN',
 };

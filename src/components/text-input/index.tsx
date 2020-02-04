@@ -3,7 +3,7 @@ import ReactNative, { TextInputProps, TouchableWithoutFeedback, ViewStyle } from
 import { Container, Input, Label } from 'components/text-input/styles';
 
 type Props = {
-    label: string;
+    label?: string;
     style?: ViewStyle;
     inputStyle?: ViewStyle;
 } & TextInputProps;

@@ -36,7 +36,7 @@ export const Container = styled.View<{ backgroundColor?: string; mode: Container
     ${(props) =>
         (props.mode === 'text' &&
             css`
-                background-color: #fff;
+                background-color: transparent;
                 color: #111;
                 border-width: 0;
             `) ||

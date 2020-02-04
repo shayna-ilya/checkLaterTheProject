@@ -3,7 +3,8 @@ import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 import { SignInScreen } from 'screens/sign-in';
 import { SignUpScreen } from 'screens/sign-up';
 import { ROUTES } from 'navigation/route-names';
-import { MainScreen } from '../screens/main';
+import { ListScreen } from 'screens/list-screen';
+import { MainScreen } from 'screens/main';
 
 const AuthStack = createStackNavigator(
     {
@@ -18,6 +19,7 @@ const AuthStack = createStackNavigator(
 const MainStack = createStackNavigator(
     {
         [ROUTES.mainScreen]: { screen: MainScreen, navigationOptions: { header: () => null } },
+        [ROUTES.listScreen]: { screen: ListScreen, navigationOptions: { header: () => null } },
     },
     {
         initialRouteKey: ROUTES.mainScreen,
