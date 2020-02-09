@@ -10,6 +10,7 @@ type Props = {
     font?: Font;
     style?: TextStyle;
     weight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
+    transform?: 'uppercase' | 'capitalize' | 'lowercase' | 'none';
 } & TextProps;
 
 const DEFAULT_TEXT_SIZE = '15px';
@@ -30,11 +31,12 @@ const Text = styled.Text<Props>`
     font-size: ${(props) => (props.size ? `${props.size}px` : DEFAULT_TEXT_SIZE)};
     font-family: ${(props) => (props.font ? FONTS[props.font] : FONTS.textRegular)};
     font-weight: ${(props) => props.weight};
+    text-transform: ${(props) => props.transform || 'none'};
 `;
 
-export const AppText: React.FC<Props> = ({ align = 'left', children, weight = 'normal', ...rest }) => {
+export const AppText: React.FC<Props> = ({ align = 'left', children, weight = 'normal', transform = 'none', ...rest }) => {
     return (
-        <Text align={align} weight={weight} {...rest}>
+        <Text align={align} weight={weight} transform={transform} {...rest}>
             {children}
         </Text>
     );

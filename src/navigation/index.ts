@@ -19,7 +19,7 @@ const AuthStack = createStackNavigator(
 const MainStack = createStackNavigator(
     {
         [ROUTES.mainScreen]: { screen: MainScreen, navigationOptions: { header: () => null } },
-        [ROUTES.listScreen]: { screen: ListScreen, navigationOptions: { header: () => null } },
+        [ROUTES.listScreen]: { screen: ListScreen },
     },
     {
         initialRouteKey: ROUTES.mainScreen,
@@ -32,7 +32,7 @@ const RootNavigation = createSwitchNavigator(
         [ROUTES.mainStack]: MainStack,
     },
     {
-        initialRouteName: ROUTES.authStack,
+        initialRouteName: ROUTES.mainStack,
     },
 );
 
