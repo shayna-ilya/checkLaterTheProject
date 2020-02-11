@@ -1,20 +1,26 @@
 import React from 'react';
 import styled from 'styled-components/native';
-import { FlatList, ListRenderItemInfo } from 'react-native';
+import { FlatList, ListRenderItemInfo, ViewStyle } from 'react-native';
 import { dataArray } from 'constants';
 import { ContentListItem } from 'components/content-list/content-list-item';
 
-type Props = {};
+type Props = {
+    style?: ViewStyle;
+};
 
 const Container = styled.View``;
 
-export const ContentList: React.FC<Props> = (props) => {
+const StyledContentListItem = styled(ContentListItem)`
+    margin-bottom: 30px;
+`;
+
+export const ContentList: React.FC<Props> = ({ style }) => {
     const renderItem = React.useCallback((info: ListRenderItemInfo<any>) => {
-        return <ContentListItem data={info.item} />;
+        return <StyledContentListItem data={info.item} />;
     }, []);
 
     return (
-        <Container>
+        <Container style={style}>
             <FlatList showsHorizontalScrollIndicator={false} data={dataArray} renderItem={renderItem} />
         </Container>
     );
