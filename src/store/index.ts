@@ -1,6 +1,21 @@
 import { createStore, applyMiddleware, compose } from 'redux';
 import createSagaMiddleware from 'redux-saga';
+import AsyncStorage from '@react-native-community/async-storage';
+import { persistStore, persistReducer } from 'redux-persist';
 import { rootReducer } from 'store/ducks';
+
+const persistConfig = {
+    // Root
+    key: 'root',
+    // Storage Method (React Native)
+    storage: AsyncStorage,
+    // Whitelist (Save Specific Reducers)
+    whitelist: ['authReducer'],
+    // Blacklist (Don't Save Specific Reducers)
+    blacklist: ['counterReducer'],
+};
+
+const persistedReducer = persistReducer(persistConfig, rootReducer);
 
 const sagaMiddleware = createSagaMiddleware();
 // configure middlewares
@@ -12,9 +27,9 @@ const enhancer = compose(applyMiddleware(...middlewares));
 const initialState = {};
 
 // create store
-const store = createStore(rootReducer, initialState, enhancer);
-
+const store = createStore(persistedReducer, initialState, enhancer);
+const persistor = persistStore(store);
 sagaMiddleware.run(function*() {});
 
 // export store singleton instance
-export default store;
+export { store, persistor };
