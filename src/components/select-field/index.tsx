@@ -24,6 +24,7 @@ const TextContainer = styled.View`
     border: rgba(228, 228, 228, 0.6) 1px solid;
     border-radius: 5px;
     font-size: 13px;
+    padding-left: 20px;
     line-height: 18px;
     height: 50px;
     display: flex;
