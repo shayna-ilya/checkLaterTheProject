@@ -1,6 +1,6 @@
 import React from 'react';
 import { FlatList, ListRenderItemInfo, View } from 'react-native';
-import { Category } from 'components/categories-navigator/Category';
+import { Category } from 'components/categories-navigator/category';
 
 type Props = {};
 

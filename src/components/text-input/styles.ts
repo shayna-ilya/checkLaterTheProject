@@ -7,6 +7,7 @@ export const Input = styled.TextInput`
     border-radius: 5px;
     font-size: 13px;
     line-height: 18px;
+    height: 50px;
 `;
 
 type LabelProps = { textTransform?: 'uppercase' | 'lowercase' | 'capitalize' | 'none' };

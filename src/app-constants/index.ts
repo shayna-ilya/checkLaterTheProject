@@ -1,6 +1,9 @@
 import { images } from 'assets';
 import { AppDataElement } from 'types/main-screen';
 
+export const genres = ['actionAdventure', 'scienceFiction', 'historical', 'fantasy', 'drama', 'comedy', 'crime', 'horror'] as const;
+export const categories = ['willWatch', 'watched', 'favorite'] as const;
+
 export const dataArray: AppDataElement[] = [
     {
         img: images.images.ex1,
