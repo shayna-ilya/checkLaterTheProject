@@ -4,7 +4,7 @@ import { I18nextProvider } from 'react-i18next';
 import { Navigation } from 'navigation';
 import { Provider } from 'react-redux';
 import { ActionSheetProvider } from '@expo/react-native-action-sheet';
-import configureStore from './state';
+import configureStore from './store';
 
 const App = () => {
     return (

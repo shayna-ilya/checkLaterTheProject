@@ -1,7 +1,6 @@
 import { createStore, applyMiddleware, compose } from 'redux';
 import createSagaMiddleware from 'redux-saga';
-
-import { rootReducer } from './ducks/index';
+import { rootReducer } from 'store/ducks';
 
 const sagaMiddleware = createSagaMiddleware();
 // configure middlewares
@@ -9,7 +8,7 @@ const middlewares = [sagaMiddleware];
 // compose enhancers
 const enhancer = compose(applyMiddleware(...middlewares));
 
-// rehydrate state on app start
+// rehydrate store on app start
 const initialState = {};
 
 // create store
