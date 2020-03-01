@@ -11,12 +11,15 @@ export const Input = styled.TextInput`
     height: 50px;
 `;
 
-type LabelProps = { textTransform?: 'uppercase' | 'lowercase' | 'capitalize' | 'none' };
+type LabelProps = {
+    textTransform?: 'uppercase' | 'lowercase' | 'capitalize' | 'none';
+    fontWeight?: 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
+};
 
 export const Label = styled.Text<LabelProps>`
     width: 100%;
     font-size: 15px;
-    font-weight: bold;
+    font-weight: ${(props) => (props.fontWeight ? props.fontWeight : 'bold')};
     line-height: 20px;
     margin-bottom: 15px;
     text-transform: ${(props) => (props.textTransform ? props.textTransform : 'uppercase')};

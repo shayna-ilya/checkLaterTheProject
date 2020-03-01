@@ -29,6 +29,10 @@ const ButtonContainer = styled.View`
     margin-bottom: 25px;
 `;
 
+const StyledText = styled(AppText)`
+    margin-bottom: 10px;
+`;
+
 export const AddScreen: React.FC = () => {
     const [activeType, setActiveType] = React.useState<number>(1);
     const [selectedGenre, setSelectedGenre] = React.useState<string>(genres[0]);
@@ -61,9 +65,9 @@ export const AddScreen: React.FC = () => {
 
     return (
         <Container>
-            <AppText size={17}>{t('addScreen:selectType')}</AppText>
+            <StyledText size={17}>{t('addScreen:selectType')}</StyledText>
             <SelectTypeList activeType={activeType} setActiveType={setActiveType} />
-            <StyledTextInput label="Name" labelTextTransform="capitalize" />
+            <StyledTextInput labelFontWeight="normal" label="Name" labelTextTransform="capitalize" />
             <StyledSelectField label="Genre" text={t(`genres:${selectedGenre}`)} onPress={handleGenreInputPress} />
             <StyledSelectField label="Category" text={t(`categories:${selectedCategory}`)} onPress={handleCategoriesInputPress} />
             <ButtonContainer>
