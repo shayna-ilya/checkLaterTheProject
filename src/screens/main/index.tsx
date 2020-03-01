@@ -2,11 +2,12 @@ import React from 'react';
 import styled from 'styled-components/native';
 
 import { ScrollView } from 'react-native';
-import { dataArray } from 'constants';
+import { dataArray } from 'app-constants';
 import { TextInput } from 'components/text-input';
 import { TypesList } from 'components/types-list';
 import { useNavigation } from 'react-navigation-hooks';
 import { ROUTES } from 'navigation/route-names';
+import { Fab } from 'components/fab';
 
 const Container = styled.View`
     margin-left: 25px;
@@ -20,6 +21,7 @@ export const MainScreen: React.FC = () => {
     const games = React.useMemo(() => dataArray.filter((item) => item.type === 'game'), []);
 
     const handleShowAllPress = React.useCallback(() => navigate(ROUTES.listScreen), [navigate]);
+    const handleAddButtonPress = React.useCallback(() => navigate(ROUTES.addScreen), [navigate]);
 
     return (
         <Container>
@@ -29,6 +31,7 @@ export const MainScreen: React.FC = () => {
                 <TypesList handleShowAllPress={handleShowAllPress} title="Books" data={books} />
                 <TypesList handleShowAllPress={handleShowAllPress} title="Games" data={games} />
             </ScrollView>
+            <Fab onPress={handleAddButtonPress} />
         </Container>
     );
 };

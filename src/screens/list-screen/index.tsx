@@ -1,6 +1,6 @@
 import React from 'react';
 import { CategoriesNavigator } from 'components/categories-navigator';
-import { dataArray } from 'constants';
+import { dataArray } from 'app-constants';
 import { TypesList } from 'components/types-list';
 import { ContentList } from 'components/content-list';
 import styled from 'styled-components/native';

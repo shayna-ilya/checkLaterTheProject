@@ -5,6 +5,7 @@ import { SignUpScreen } from 'screens/sign-up';
 import { ROUTES } from 'navigation/route-names';
 import { ListScreen } from 'screens/list-screen';
 import { MainScreen } from 'screens/main';
+import {AddScreen} from "screens/add-screen";
 
 const AuthStack = createStackNavigator(
     {
@@ -20,6 +21,7 @@ const MainStack = createStackNavigator(
     {
         [ROUTES.mainScreen]: { screen: MainScreen, navigationOptions: { header: () => null } },
         [ROUTES.listScreen]: { screen: ListScreen },
+        [ROUTES.addScreen]: { screen: AddScreen },
     },
     {
         initialRouteKey: ROUTES.mainScreen,

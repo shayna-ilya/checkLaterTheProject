@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components/native';
 import { FlatList, ListRenderItemInfo, ViewStyle } from 'react-native';
-import { dataArray } from 'constants';
+import { dataArray } from 'app-constants';
 import { ContentListItem } from 'components/content-list/content-list-item';
 
 type Props = {

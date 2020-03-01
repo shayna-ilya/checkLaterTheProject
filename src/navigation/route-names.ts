@@ -5,4 +5,5 @@ export const ROUTES = {
     mainStack: 'MAIN_STACK',
     mainScreen: 'MAIN_SCREEN',
     listScreen: 'LIST_SCREEN',
+    addScreen: 'ADD_SCREEN',
 };
