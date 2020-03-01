@@ -3,6 +3,7 @@ import { AppDataElement } from 'types/main-screen';
 
 export const genres = ['actionAdventure', 'scienceFiction', 'historical', 'fantasy', 'drama', 'comedy', 'crime', 'horror'] as const;
 export const categories = ['willWatch', 'watched', 'favorite'] as const;
+export const ACCEPTED_LANGUAGES = ['ru', 'en'];
 
 export const dataArray: AppDataElement[] = [
     {
