@@ -1,5 +1,5 @@
 import React from 'react';
-import { FlatList, View, ViewStyle } from 'react-native';
+import { FlatList, ListRenderItemInfo, View, ViewStyle } from 'react-native';
 import { AppDataElement } from 'types/main-screen';
 import styled from 'styled-components/native';
 import { AppText } from 'components/app-text';
@@ -21,9 +21,11 @@ const TitleContainer = styled.View`
 `;
 
 export const TypesList: React.FC<Props> = ({ data, title, handleShowAllPress, style }) => {
-    const renderCarouselItem = React.useCallback((item: { item: AppDataElement; index: number }) => {
-        return <TypesListItem data={item.item} index={item.index} />;
+    const renderItem = React.useCallback(({ item, index }: ListRenderItemInfo<AppDataElement>) => {
+        return <TypesListItem data={item} index={index} />;
     }, []);
+
+    const keyExtractor = React.useCallback((item: AppDataElement, index: number) => index.toString(), []);
 
     return (
         <View style={style}>
@@ -31,7 +33,7 @@ export const TypesList: React.FC<Props> = ({ data, title, handleShowAllPress, st
                 <AppText size={17}>{title}</AppText>
                 <Button title="Show all" titleSize={13} onPress={handleShowAllPress} titleColor="#6979F8" mode="text" />
             </TitleContainer>
-            <FlatList data={data} horizontal showsHorizontalScrollIndicator={false} renderItem={renderCarouselItem} />
+            <FlatList data={data} horizontal keyExtractor={keyExtractor} showsHorizontalScrollIndicator={false} renderItem={renderItem} />
         </View>
     );
 };
