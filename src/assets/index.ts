@@ -7,6 +7,7 @@ export const images = {
         movieType: require('./images/MovieType.png'),
         gameType: require('./images/GameType.png'),
         checkIcon: require('./images/checkIcon.png'),
+        chevronDown: require('./images/chevronDown.png'),
     },
     images: {
         ex1: require('./images/imgExample.png'),
