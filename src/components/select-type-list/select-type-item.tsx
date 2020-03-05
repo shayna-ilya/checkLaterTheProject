@@ -2,13 +2,14 @@ import React from 'react';
 import styled from 'styled-components/native';
 import { Image, ImageSourcePropType, ViewStyle, StyleSheet } from 'react-native';
 import { images } from 'assets';
+import { Type } from 'types/main-screen';
 
 type Props = {
     icon: ImageSourcePropType;
     isActive: boolean;
     style?: ViewStyle;
-    index: number;
-    onPress(index: number): void;
+    type: Type;
+    onPress(index: Type): void;
 };
 
 const Container = styled.TouchableOpacity`
@@ -87,8 +88,8 @@ const shadows = StyleSheet.create({
     },
 });
 
-export const SelectTypeItem: React.FC<Props> = ({ icon, index, style, isActive, ...props }) => {
-    const onPress = React.useCallback(() => props.onPress(index), [index, props]);
+export const SelectTypeItem: React.FC<Props> = ({ icon, type, style, isActive, ...props }) => {
+    const onPress = React.useCallback(() => props.onPress(type), [type, props]);
 
     if (isActive) {
         return (

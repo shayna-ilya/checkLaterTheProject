@@ -1,10 +1,10 @@
 import React from 'react';
 import { Image } from 'react-native';
-import { AppDataElement } from 'types/main-screen';
+import { Entry } from 'types/main-screen';
 import styled from 'styled-components/native';
 
 type Props = {
-    data: AppDataElement;
+    data: Entry;
     index: number;
     onPress?(index: number): void;
 };

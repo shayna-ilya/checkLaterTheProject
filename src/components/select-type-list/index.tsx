@@ -1,22 +1,13 @@
 import React from 'react';
-import { ImageSourcePropType } from 'react-native';
 import { SelectTypeItem } from 'components/select-type-list/select-type-item';
-import { ContentType } from 'types/main-screen';
-import { images } from 'assets';
 import styled from 'styled-components/native';
+import { types } from 'app-constants';
+import { Type } from 'types/main-screen';
 
 type Props = {
-    activeType: number;
-    setActiveType(type: number): void;
+    activeType: Type;
+    setActiveType(type: Type): void;
 };
-
-type Type = { icon: ImageSourcePropType; type: ContentType };
-
-const types: Type[] = [
-    { icon: images.icons.bookType, type: 'book' },
-    { icon: images.icons.movieType, type: 'movie' },
-    { icon: images.icons.gameType, type: 'game' },
-];
 
 const Container = styled.View`
     display: flex;
@@ -31,8 +22,8 @@ const StyledSelectTypeItem = styled(SelectTypeItem)`
 
 export const SelectTypeList: React.FC<Props> = ({ activeType, setActiveType }) => {
     const renderItem = React.useCallback(
-        (item: Type, index: number) => <StyledSelectTypeItem onPress={setActiveType} index={index} key={index} isActive={index === activeType} icon={item.icon} />,
-        [activeType],
+        (item: Type, index: number) => <StyledSelectTypeItem onPress={setActiveType} type={item} key={index} isActive={item.name === activeType.name} icon={item.icon} />,
+        [activeType, setActiveType],
     );
 
     const renderIcons = React.useCallback(() => {

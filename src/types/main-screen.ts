@@ -1,16 +1,19 @@
 import { categories, genres } from 'app-constants';
+import { ImageSourcePropType } from 'react-native';
 
 export type ContentType = 'movie' | 'book' | 'game';
 
-export type Genres = typeof genres[number];
-export type Categories = typeof categories[number];
+export type Genre = typeof genres[number];
+export type Category = typeof categories[number];
+export type Type = { icon: ImageSourcePropType; name: ContentType };
 
 // TODO: come up with a different name
-export type AppDataElement = {
+export type Entry = {
+    id: string;
     img: any;
     name: string;
-    addData: string;
+    addDate: string;
     type: ContentType;
-    genre: Genres;
+    genre: Genre;
     category: string;
 };

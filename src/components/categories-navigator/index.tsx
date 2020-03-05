@@ -4,6 +4,7 @@ import { Category } from 'components/categories-navigator/category';
 
 type Props = {};
 
+// TODO:
 const categories = ['will watch', 'watched', 'favorite', 'all'];
 
 export const CategoriesNavigator: React.FC<Props> = (props) => {
@@ -13,14 +14,16 @@ export const CategoriesNavigator: React.FC<Props> = (props) => {
 
     const renderItem = React.useCallback(
         (item: ListRenderItemInfo<string>) => {
-            return <Category key={item.index} index={item.index} isActive={activeCategoryIndex === item.index} title={item.item} onPress={handleCategoryPress} />;
+            return <Category index={item.index} isActive={activeCategoryIndex === item.index} title={item.item} onPress={handleCategoryPress} />;
         },
         [activeCategoryIndex, handleCategoryPress],
     );
 
+    const keyExtractor = React.useCallback((item: string, index: number) => item, []);
+
     return (
         <View>
-            <FlatList showsHorizontalScrollIndicator={false} horizontal={true} data={categories} renderItem={renderItem} />
+            <FlatList showsHorizontalScrollIndicator={false} keyExtractor={keyExtractor} horizontal={true} data={categories} renderItem={renderItem} />
         </View>
     );
 };

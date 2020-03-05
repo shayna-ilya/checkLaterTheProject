@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppDataElement } from 'types/main-screen';
+import { Entry } from 'types/main-screen';
 import styled from 'styled-components/native';
 import { AppText } from 'components/app-text';
 import { Button } from 'components/button';
@@ -7,7 +7,7 @@ import { ViewStyle } from 'react-native';
 
 type Props = {
     style?: ViewStyle;
-    data: AppDataElement;
+    data: Entry;
 };
 
 const Container = styled.View`
@@ -48,7 +48,7 @@ export const ContentListItem: React.FC<Props> = ({ data, style }) => {
                     <Button title="Favorite" mode="text" />
                     <Button title="Finished" mode="text" />
                 </ButtonsContainer>
-                <AppText>{data.addData}</AppText>
+                <AppText>{data.addDate}</AppText>
             </RightContainer>
         </Container>
     );

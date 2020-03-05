@@ -5,6 +5,9 @@ import { TypesList } from 'components/types-list';
 import { ContentList } from 'components/content-list';
 import styled from 'styled-components/native';
 import { ScrollView } from 'react-native-gesture-handler';
+import { useSelector } from 'react-redux';
+import { getAllEntries } from 'store/ducks/entries/selectors';
+import { SafeAreaView } from 'react-native';
 
 const Container = styled.View`
     background-color: white;
@@ -23,12 +26,14 @@ const StyledContentList = styled(ContentList)`
 `;
 
 export const ListScreen: React.FC = (props) => {
+    const entries = useSelector(getAllEntries);
+
     return (
         <Container>
             <CategoriesNavigator />
             <ScrollView>
-                <StyledTypesList handleShowAllPress={() => console.log()} title="Old" data={dataArray} />
-                <StyledContentList />
+                <StyledTypesList handleShowAllPress={() => console.log()} title="Old" data={entries} />
+                <StyledContentList data={entries} />
             </ScrollView>
         </Container>
     );
