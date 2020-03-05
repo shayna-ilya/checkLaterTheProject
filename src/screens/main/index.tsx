@@ -8,9 +8,10 @@ import { ROUTES } from 'navigation/route-names';
 import { Fab } from 'components/fab';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import { getBooks, getGames, getMovies } from 'store/ducks/entries/selectors';
 
-const Container = styled.View`
+const Container = styled(SafeAreaView)`
     padding-left: 25px;
     background: white;
 `;
@@ -28,7 +29,7 @@ export const MainScreen: React.FC = () => {
 
     return (
         <Container>
-            <ScrollView>
+            <ScrollView showsVerticalScrollIndicator={false}>
                 <TextInput placeholder="Search" />
                 <TypesList handleShowAllPress={handleShowAllPress} title={t('movies')} data={movies} />
                 <TypesList handleShowAllPress={handleShowAllPress} title={t('books')} data={books} />

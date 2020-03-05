@@ -5,6 +5,8 @@ import { ROUTES } from 'navigation/route-names';
 import { MainScreen } from 'screens/main';
 import { ListScreen } from 'screens/list-screen';
 import { AddScreen } from 'screens/add-screen';
+import { createDrawerNavigator } from '@react-navigation/drawer';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 // import { createStackNavigator } from 'react-navigation-stack';
 // import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 // import { SignInScreen } from 'screens/sign-in';
@@ -49,14 +51,24 @@ import { AddScreen } from 'screens/add-screen';
 
 const MainStack = createStackNavigator();
 
+const MainStackNavigator = () => (
+    <MainStack.Navigator>
+        <MainStack.Screen name={ROUTES.mainScreen} component={MainScreen} />
+        <MainStack.Screen name={ROUTES.listScreen} component={ListScreen} />
+        <MainStack.Screen name={ROUTES.addScreen} component={AddScreen} />
+    </MainStack.Navigator>
+);
+
+const Drawer = createDrawerNavigator();
+
 export const Navigation = () => {
     return (
-        <NavigationContainer>
-            <MainStack.Navigator>
-                <MainStack.Screen name={ROUTES.mainScreen} component={MainScreen} />
-                <MainStack.Screen name={ROUTES.listScreen} component={ListScreen} />
-                <MainStack.Screen name={ROUTES.addScreen} component={AddScreen} />
-            </MainStack.Navigator>
-        </NavigationContainer>
+        <SafeAreaProvider>
+            <NavigationContainer>
+                <Drawer.Navigator initialRouteName={ROUTES.mainStack}>
+                    <Drawer.Screen name={ROUTES.mainStack} component={MainStackNavigator} />
+                </Drawer.Navigator>
+            </NavigationContainer>
+        </SafeAreaProvider>
     );
 };

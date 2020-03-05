@@ -7,9 +7,9 @@ import styled from 'styled-components/native';
 import { ScrollView } from 'react-native-gesture-handler';
 import { useSelector } from 'react-redux';
 import { getAllEntries } from 'store/ducks/entries/selectors';
-import { SafeAreaView } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
-const Container = styled.View`
+const Container = styled(SafeAreaView)`
     background-color: white;
     width: 100%;
     height: 100%;

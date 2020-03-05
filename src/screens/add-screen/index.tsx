@@ -11,8 +11,9 @@ import { useTranslation } from 'react-i18next';
 import { addEntry } from 'store/ducks/entries/actions';
 import { useDispatch } from 'react-redux';
 import { Category, Genre, Type } from 'types/main-screen';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
-const Container = styled.View`
+const Container = styled(SafeAreaView)`
     padding: 0 22px 0 22px;
     width: 100%;
     height: 100%;
