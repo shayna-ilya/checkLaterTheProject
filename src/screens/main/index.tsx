@@ -1,11 +1,9 @@
 import React from 'react';
 import styled from 'styled-components/native';
-
+import { useNavigation } from '@react-navigation/native';
 import { ScrollView } from 'react-native';
-import { dataArray } from 'app-constants';
 import { TextInput } from 'components/text-input';
 import { TypesList } from 'components/types-list';
-import { useNavigation } from 'react-navigation-hooks';
 import { ROUTES } from 'navigation/route-names';
 import { Fab } from 'components/fab';
 import { useTranslation } from 'react-i18next';
@@ -13,7 +11,8 @@ import { useSelector } from 'react-redux';
 import { getBooks, getGames, getMovies } from 'store/ducks/entries/selectors';
 
 const Container = styled.View`
-    margin-left: 25px;
+    padding-left: 25px;
+    background: white;
 `;
 
 export const MainScreen: React.FC = () => {

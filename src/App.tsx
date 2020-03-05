@@ -1,11 +1,11 @@
 import React from 'react';
 import { i18n } from 'translation';
 import { I18nextProvider } from 'react-i18next';
-import { Navigation } from 'navigation';
 import { Provider } from 'react-redux';
 import { ActionSheetProvider } from '@expo/react-native-action-sheet';
 import { persistor, store } from 'store';
 import { PersistGate } from 'redux-persist/integration/react';
+import { Navigation } from 'navigation';
 
 const App = () => {
     return (
