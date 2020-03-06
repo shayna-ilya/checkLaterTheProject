@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components/native';
 import { useNavigation } from '@react-navigation/native';
 import { ScrollView } from 'react-native';
-import { TextInput } from 'components/text-input';
 import { TypesList } from 'components/types-list';
 import { ROUTES } from 'navigation/route-names';
 import { Fab } from 'components/fab';
@@ -12,7 +11,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { getBooks, getGames, getMovies } from 'store/ducks/entries/selectors';
 
 const Container = styled(SafeAreaView)`
-    padding-left: 25px;
+    padding-left: 18px;
     background: white;
 `;
 
@@ -30,7 +29,6 @@ export const MainScreen: React.FC = () => {
     return (
         <Container>
             <ScrollView showsVerticalScrollIndicator={false}>
-                <TextInput placeholder="Search" />
                 <TypesList handleShowAllPress={handleShowAllPress} title={t('movies')} data={movies} />
                 <TypesList handleShowAllPress={handleShowAllPress} title={t('books')} data={books} />
                 <TypesList handleShowAllPress={handleShowAllPress} title={t('games')} data={games} />

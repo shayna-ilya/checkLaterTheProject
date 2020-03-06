@@ -8,6 +8,8 @@ export const images = {
         gameType: require('./images/GameType.png'),
         checkIcon: require('./images/checkIcon.png'),
         chevronDown: require('./images/chevronDown.png'),
+        menu: require('./images/menu.png'),
+        search: require('./images/search.png'),
     },
     images: {
         ex1: require('./images/imgExample.png'),

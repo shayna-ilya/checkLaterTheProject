@@ -7,6 +7,12 @@ import { ListScreen } from 'screens/list-screen';
 import { AddScreen } from 'screens/add-screen';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { StackHeaderProps } from '@react-navigation/stack/lib/typescript/src/types';
+import { Image, TouchableOpacity } from 'react-native';
+import { AppText } from 'components/app-text';
+import styled from 'styled-components/native';
+import { images } from 'assets';
+import { MainScreenHeader } from 'components/main-screen-header';
 // import { createStackNavigator } from 'react-navigation-stack';
 // import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 // import { SignInScreen } from 'screens/sign-in';
@@ -53,7 +59,7 @@ const MainStack = createStackNavigator();
 
 const MainStackNavigator = () => (
     <MainStack.Navigator>
-        <MainStack.Screen name={ROUTES.mainScreen} component={MainScreen} />
+        <MainStack.Screen name={ROUTES.mainScreen} options={{ header: MainScreenHeader }} component={MainScreen} />
         <MainStack.Screen name={ROUTES.listScreen} component={ListScreen} />
         <MainStack.Screen name={ROUTES.addScreen} component={AddScreen} />
     </MainStack.Navigator>

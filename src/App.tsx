@@ -6,6 +6,7 @@ import { ActionSheetProvider } from '@expo/react-native-action-sheet';
 import { persistor, store } from 'store';
 import { PersistGate } from 'redux-persist/integration/react';
 import { Navigation } from 'navigation';
+import { StatusBar } from 'react-native';
 
 const App = () => {
     return (
@@ -14,6 +15,7 @@ const App = () => {
                 <ActionSheetProvider>
                     <Provider store={store}>
                         <PersistGate loading={null} persistor={persistor}>
+                            <StatusBar barStyle="dark-content" backgroundColor="white" />
                             <Navigation />
                         </PersistGate>
                     </Provider>
