@@ -12,6 +12,7 @@ import { getBooks, getGames, getMovies } from 'store/ducks/entries/selectors';
 
 const Container = styled(SafeAreaView)`
     padding-left: 18px;
+    height: 100%;
     background: white;
 `;
 
@@ -27,7 +28,7 @@ export const MainScreen: React.FC = () => {
     const handleAddButtonPress = React.useCallback(() => navigate(ROUTES.addScreen), [navigate]);
 
     return (
-        <Container>
+        <Container style={{ paddingTop: 0 }}>
             <ScrollView showsVerticalScrollIndicator={false}>
                 <TypesList handleShowAllPress={handleShowAllPress} title={t('movies')} data={movies} />
                 <TypesList handleShowAllPress={handleShowAllPress} title={t('books')} data={books} />
