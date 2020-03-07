@@ -8,11 +8,13 @@ import { AddScreen } from 'screens/add-screen';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { StackHeaderProps } from '@react-navigation/stack/lib/typescript/src/types';
-import { Image, TouchableOpacity } from 'react-native';
+import { Image, TouchableOpacity, View } from 'react-native';
 import { AppText } from 'components/app-text';
 import styled from 'styled-components/native';
 import { images } from 'assets';
 import { MainScreenHeader } from 'components/main-screen-header';
+import { DrawerContentComponentProps } from '@react-navigation/drawer/src/types';
+import {DrawerContent} from "components/drawer-content";
 // import { createStackNavigator } from 'react-navigation-stack';
 // import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 // import { SignInScreen } from 'screens/sign-in';
@@ -67,11 +69,13 @@ const MainStackNavigator = () => (
 
 const Drawer = createDrawerNavigator();
 
+
+
 export const Navigation = () => {
     return (
         <SafeAreaProvider>
             <NavigationContainer>
-                <Drawer.Navigator initialRouteName={ROUTES.mainStack}>
+                <Drawer.Navigator initialRouteName={ROUTES.mainStack} drawerContent={(props) => <DrawerContent {...props} />} lazy drawerType="slide">
                     <Drawer.Screen name={ROUTES.mainStack} component={MainStackNavigator} />
                 </Drawer.Navigator>
             </NavigationContainer>

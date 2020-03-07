@@ -10,6 +10,9 @@ export const images = {
         chevronDown: require('./images/chevronDown.png'),
         menu: require('./images/menu.png'),
         search: require('./images/search.png'),
+        plusSquare: require('./images/plus-square.png'),
+        home: require('./images/home.png'),
+        settings: require('./images/settings.png'),
     },
     images: {
         ex1: require('./images/imgExample.png'),
