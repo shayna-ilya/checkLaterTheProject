@@ -6,4 +6,6 @@ export const ROUTES = {
     mainScreen: 'MAIN_SCREEN',
     listScreen: 'LIST_SCREEN',
     addScreen: 'ADD_SCREEN',
+    settingStack: 'SETTING_STACK',
+    settingScreen: 'SETTING_SCREEN',
 };

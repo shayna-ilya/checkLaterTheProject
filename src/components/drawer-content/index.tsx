@@ -55,7 +55,7 @@ export const DrawerContent: React.FC<DrawerContentComponentProps> = ({ state, na
                 <StyledDrawerItem onPress={navigate(ROUTES.addScreen)} image={images.icons.plusSquare} text="Add" isActive={getActiveRouteName(state) === ROUTES.addScreen} />
             </DrawerItemsContainer>
             <BottomContainer>
-                <StyledDrawerItem image={images.icons.settings} text="Setting" />
+                <StyledDrawerItem onPress={navigate(ROUTES.settingStack)} image={images.icons.settings} text="Setting" />
             </BottomContainer>
         </Container>
     );
