@@ -1,11 +1,11 @@
 import styled from 'styled-components/native';
 import React from 'react';
 import { StackHeaderProps } from '@react-navigation/stack/lib/typescript/src/types';
-import { Image, TouchableOpacity, StatusBar } from 'react-native';
+import { Image, TouchableOpacity } from 'react-native';
 import { images } from 'assets';
 import { DrawerActions } from '@react-navigation/native';
 import { AppText } from 'components/app-text';
-import { SafeAreaView, useSafeArea } from 'react-native-safe-area-context';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 const Container = styled(SafeAreaView)`
     height: 60px;
