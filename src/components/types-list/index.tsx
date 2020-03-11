@@ -1,5 +1,5 @@
 import React from 'react';
-import { FlatList, ListRenderItemInfo, StyleSheet, View, ViewStyle } from 'react-native';
+import { FlatList, ListRenderItemInfo, View, ViewStyle } from 'react-native';
 import { Entry } from 'types/main-screen';
 import styled from 'styled-components/native';
 import { AppText } from 'components/common/app-text';
@@ -20,9 +20,13 @@ const TitleContainer = styled.View`
     align-items: center;
 `;
 
+const StyledTypesListItem = styled(TypesListItem)`
+    margin-right: 15px;
+`;
+
 export const TypesList: React.FC<Props> = ({ data, title, handleShowAllPress, style }) => {
     const renderItem = React.useCallback(({ item, index }: ListRenderItemInfo<Entry>) => {
-        return <TypesListItem data={item} index={index} />;
+        return <StyledTypesListItem data={item} index={index} />;
     }, []);
 
     const keyExtractor = React.useCallback((item: Entry, index: number) => index.toString(), []);

@@ -1,7 +1,8 @@
 import React from 'react';
-import { StyleSheet, ViewStyle } from 'react-native';
+import { ViewStyle } from 'react-native';
 import { Entry } from 'types/main-screen';
 import styled from 'styled-components/native';
+import { AppText } from 'components/common/app-text';
 
 type Props = {
     data: Entry;
@@ -11,8 +12,13 @@ type Props = {
 };
 
 const Container = styled.TouchableOpacity`
+    display: flex;
+    justify-content: flex-start;
     width: 150px;
     height: 180px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: rgba(228, 228, 228, 0.6);
 `;
 
 const StyledImage = styled.Image`
@@ -21,26 +27,27 @@ const StyledImage = styled.Image`
     border-radius: 10px;
 `;
 
-const shadows = StyleSheet.create({
-    itemShadow: {
-        shadowColor: '#000',
-        shadowOffset: {
-            width: 0,
-            height: 1,
-        },
-        shadowOpacity: 0.15,
-        shadowRadius: 2.5,
-
-        elevation: 3,
-    },
-});
+const DataContainer = styled.View`
+    display: flex;
+    margin: 10px 5px 0 15px;
+    justify-content: center;
+    align-items: flex-start;
+`;
 
 export const TypesListItem: React.FC<Props> = ({ data, onPress, index, style }) => {
     const handlePress = React.useCallback(() => onPress && onPress(index), [index, onPress]);
 
     return (
-        <Container style={[style, shadows.itemShadow]} onPress={handlePress}>
+        <Container style={style} onPress={handlePress}>
             <StyledImage source={data.img} />
+            <DataContainer>
+                <AppText numberOfLines={1} size={17}>
+                    {data.name}
+                </AppText>
+                <AppText size={13} color="#999999">
+                    {data.addDate}
+                </AppText>
+            </DataContainer>
         </Container>
     );
 };
