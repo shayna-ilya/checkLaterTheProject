@@ -1,5 +1,5 @@
 import React from 'react';
-import { FlatList, ListRenderItemInfo, View, ViewStyle } from 'react-native';
+import { FlatList, ListRenderItemInfo, StyleSheet, View, ViewStyle } from 'react-native';
 import { Entry } from 'types/main-screen';
 import styled from 'styled-components/native';
 import { AppText } from 'components/app-text';
