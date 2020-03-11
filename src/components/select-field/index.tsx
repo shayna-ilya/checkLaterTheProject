@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components/native';
-import { AppText } from 'components/app-text';
+import { AppText } from 'components/common/app-text';
 import { Image, TouchableOpacity, ViewStyle } from 'react-native';
 import { images } from 'assets';
 

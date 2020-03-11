@@ -1,8 +1,8 @@
 import React from 'react';
 import { ImageSourcePropType, TouchableOpacity, ViewStyle } from 'react-native';
 import { Icon } from 'components/icon';
-import { ActivityIndicator, Container, ContainerMode, defaultTextColor, IconContainer, InvisibleContainer, Title } from 'components/button/styles';
-import {AppText} from "components/app-text";
+import { ActivityIndicator, Container, ContainerMode, defaultTextColor, IconContainer, InvisibleContainer, Title } from 'components/common/button/styles';
+import {AppText} from "components/common/app-text";
 
 type Props = {
     title: string;

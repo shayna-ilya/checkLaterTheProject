@@ -1,8 +1,8 @@
 import React from 'react';
-import { TextInput } from 'components/text-input';
-import { Button } from 'components/button';
+import { TextInput } from 'components/common/text-input';
+import { Button } from 'components/common/button';
 import { images } from 'assets';
-import { AppText } from 'components/app-text';
+import { AppText } from 'components/common/app-text';
 import styled from 'styled-components/native';
 import { useNavigation } from 'react-navigation-hooks';
 import { ROUTES } from '../../navigation/route-names';

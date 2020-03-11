@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactNative, { TextInputProps, TouchableWithoutFeedback, ViewStyle, View } from 'react-native';
-import { Container, Input, Label } from 'components/text-input/styles';
+import { Container, Input, Label } from 'components/common/text-input/styles';
 
 type Props = {
     label?: string;

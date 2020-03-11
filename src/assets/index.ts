@@ -13,6 +13,9 @@ export const images = {
         plusSquare: require('./images/plus-square.png'),
         home: require('./images/home.png'),
         settings: require('./images/settings.png'),
+        bell: require('./images/bell.png'),
+        user: require('./images/user.png'),
+        eye: require('./images/eye.png'),
     },
     images: {
         ex1: require('./images/imgExample.png'),

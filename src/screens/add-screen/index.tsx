@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components/native';
-import { AppText } from 'components/app-text';
+import { AppText } from 'components/common/app-text';
 import { SelectTypeList } from 'components/select-type-list';
-import { TextInput } from 'components/text-input';
-import { Button } from 'components/button';
+import { TextInput } from 'components/common/text-input';
+import { Button } from 'components/common/button';
 import { useActionSheet } from '@expo/react-native-action-sheet';
 import { categories, genres, types } from 'app-constants';
 import { SelectField } from 'components/select-field';

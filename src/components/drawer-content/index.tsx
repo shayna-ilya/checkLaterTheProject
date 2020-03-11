@@ -1,6 +1,6 @@
 import React from 'react';
 import { DrawerContentComponentProps } from '@react-navigation/drawer/src/types';
-import { AppText } from 'components/app-text';
+import { AppText } from 'components/common/app-text';
 import styled from 'styled-components/native';
 import { images } from 'assets';
 import { DrawerContentItem } from 'components/drawer-content/drawer-content-item';

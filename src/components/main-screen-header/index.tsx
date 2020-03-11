@@ -4,7 +4,7 @@ import { StackHeaderProps } from '@react-navigation/stack/lib/typescript/src/typ
 import { Image, TouchableOpacity } from 'react-native';
 import { images } from 'assets';
 import { DrawerActions } from '@react-navigation/native';
-import { AppText } from 'components/app-text';
+import { AppText } from 'components/common/app-text';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 const Container = styled(SafeAreaView)`

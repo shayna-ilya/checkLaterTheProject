@@ -1,8 +1,8 @@
 import React from 'react';
 import { Entry } from 'types/main-screen';
 import styled from 'styled-components/native';
-import { AppText } from 'components/app-text';
-import { Button } from 'components/button';
+import { AppText } from 'components/common/app-text';
+import { Button } from 'components/common/button';
 import { ViewStyle } from 'react-native';
 
 type Props = {
