@@ -9,6 +9,7 @@ type Props = {
     description: string;
     ellipseColor: string;
     style?: ViewProps;
+    onPress?(): void;
 };
 
 const Container = styled.TouchableOpacity`
@@ -45,9 +46,9 @@ const Title = styled(AppText)`
     margin-bottom: 3px;
 `;
 
-export const SettingSectionItem: React.FC<Props> = ({ icon, title, description, ellipseColor, style }) => {
+export const SettingSectionItem: React.FC<Props> = ({ icon, title, description, ellipseColor, style, onPress }) => {
     return (
-        <Container style={style}>
+        <Container style={style} onPress={onPress}>
             <IconContainer backgroundColor={ellipseColor}>
                 <Icon source={icon} />
             </IconContainer>

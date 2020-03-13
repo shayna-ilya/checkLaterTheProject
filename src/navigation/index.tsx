@@ -10,6 +10,7 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import { MainScreenHeader } from 'components/main-screen-header';
 import { DrawerContent } from 'components/drawer-content';
 import { Setting } from 'screens/setting';
+import { AppearanceSettingsScreen } from '../screens/setting/appearance-settings';
 
 const MainStack = createStackNavigator();
 
@@ -26,6 +27,7 @@ const SettingStack = createStackNavigator();
 const SettingStackNavigator = () => (
     <SettingStack.Navigator>
         <SettingStack.Screen name={ROUTES.settingScreen} options={{ header: () => null }} component={Setting} />
+        <SettingStack.Screen name={ROUTES.appearanceSettingsScreen} options={{ header: () => null }} component={AppearanceSettingsScreen} />
     </SettingStack.Navigator>
 );
 

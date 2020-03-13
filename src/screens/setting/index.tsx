@@ -3,8 +3,10 @@ import styled from 'styled-components/native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { AppText } from 'components/common/app-text';
 import { images } from 'assets';
-import { SettingSectionItem } from 'components/settings-components/setting-section-item';
+import { SettingSectionItem } from 'components/settings-components/setting-section';
 import { DrawerNavigationProp } from '@react-navigation/drawer';
+import { useNavigation } from '@react-navigation/native';
+import { ROUTES } from '../../navigation/route-names';
 
 type Props = {} & DrawerNavigationProp<any>;
 
@@ -32,7 +34,11 @@ const StyledSettingSectionItem = styled(SettingSectionItem)`
     margin-bottom: 10px;
 `;
 
-export const Setting: React.FC<Props> = ({ navigate }) => {
+export const Setting: React.FC<Props> = () => {
+    const { navigate } = useNavigation();
+
+    const navigateTo = React.useCallback((route: string) => () => navigate(route), [navigate]);
+
     return (
         <Container>
             <Header>
@@ -41,7 +47,13 @@ export const Setting: React.FC<Props> = ({ navigate }) => {
                 </AppText>
                 <StyledImage source={images.icons.settings} />
             </Header>
-            <StyledSettingSectionItem icon={images.icons.eye} title="Appearance" ellipseColor="#00C48C" description="Theme, inpus blablabla" />
+            <StyledSettingSectionItem
+                onPress={navigateTo(ROUTES.appearanceSettingsScreen)}
+                icon={images.icons.eye}
+                title="Appearance"
+                ellipseColor="#00C48C"
+                description="Theme, inpus blablabla"
+            />
             <StyledSettingSectionItem icon={images.icons.bell} title="Push Notifications" ellipseColor="#A6D6FF" description="Lorem inpus blablabla" />
             <StyledSettingSectionItem icon={images.icons.user} title="Profile" ellipseColor="#FF98A8" description="Sync, Lorem inpus blablabla" />
         </Container>

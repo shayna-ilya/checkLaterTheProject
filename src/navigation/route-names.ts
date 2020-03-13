@@ -8,4 +8,5 @@ export const ROUTES = {
     addScreen: 'ADD_SCREEN',
     settingStack: 'SETTING_STACK',
     settingScreen: 'SETTING_SCREEN',
+    appearanceSettingsScreen: 'APPEARANCE_SETTINGS_SCREEN',
 };
