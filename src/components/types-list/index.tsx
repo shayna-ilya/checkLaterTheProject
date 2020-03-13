@@ -5,6 +5,9 @@ import styled from 'styled-components/native';
 import { AppText } from 'components/common/app-text';
 import { Button } from 'components/common/button';
 import { TypesListItem } from 'components/types-list/types-list-item';
+import { useSelector } from 'react-redux';
+import { getIsImagesEnabled } from 'store/ducks/settings/selectors';
+import { TypesListItemColorCard } from 'components/types-list/types-list-item-color-card';
 
 type Props = {
     data: Entry[];
@@ -24,10 +27,22 @@ const StyledTypesListItem = styled(TypesListItem)`
     margin-right: 15px;
 `;
 
+const StyledTypesListItemColorCard = styled(TypesListItemColorCard)`
+    margin-right: 15px;
+`;
+
 export const TypesList: React.FC<Props> = ({ data, title, handleShowAllPress, style }) => {
-    const renderItem = React.useCallback(({ item, index }: ListRenderItemInfo<Entry>) => {
-        return <StyledTypesListItem data={item} index={index} />;
-    }, []);
+    const isImageEnabled = useSelector(getIsImagesEnabled);
+
+    const renderItem = React.useCallback(
+        ({ item, index }: ListRenderItemInfo<Entry>) => {
+            if (isImageEnabled) {
+                return <StyledTypesListItem data={item} index={index} />;
+            }
+            return <StyledTypesListItemColorCard data={item} index={index} />;
+        },
+        [isImageEnabled],
+    );
 
     const keyExtractor = React.useCallback((item: Entry, index: number) => index.toString(), []);
 
