@@ -18,11 +18,11 @@ const DEFAULT_TEXT_SIZE = '15px';
 type Font = 'textRegular' | 'textBold' | 'textLight' | 'textSemibold' | 'displaySemibold';
 
 const FONTS: { [key in Font]: string } = {
-    textRegular: 'SF-Pro-Text-Regular',
-    textBold: 'SF-Pro-Text-Bold',
-    textLight: 'SF-Pro-Text-Light',
-    textSemibold: 'SF-Pro-Text-Semibold',
-    displaySemibold: 'SF-Pro-Display-Semibold',
+    textRegular: 'SFProText-Regular',
+    textBold: 'SFProText-Bold',
+    textLight: 'SFProText-Light',
+    textSemibold: 'SFProText-Semibold',
+    displaySemibold: 'SFProDisplay-Semibold',
 };
 
 const Text = styled.Text<Props>`

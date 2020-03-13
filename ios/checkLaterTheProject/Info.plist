@@ -55,20 +55,20 @@
 	<false/>
 	<key>UIAppFonts</key>
 	<array>
-		<string>SF-Pro-Text-Bold.otf</string>
-		<string>SF-Pro-Text-BoldItalic.otf</string>
-		<string>SF-Pro-Text-Heavy.otf</string>
-		<string>SF-Pro-Text-HeavyItalic.otf</string>
-		<string>SF-Pro-Text-Light.otf</string>
-		<string>SF-Pro-Text-LightItalic.otf</string>
-		<string>SF-Pro-Text-Medium.otf</string>
-		<string>SF-Pro-Text-MediumItalic.otf</string>
-		<string>SF-Pro-Text-Regular.otf</string>
-		<string>SF-Pro-Text-RegularItalic.otf</string>
-		<string>SF-Pro-Text-Semibold.otf</string>
-		<string>SF-Pro-Text-SemiboldItalic.otf</string>
-		<string>SF-Pro-Display-Regular.otf</string>
-		<string>SF-Pro-Display-Semibold.otf</string>
+		<string>SFProDisplay-Regular.otf</string>
+		<string>SFProDisplay-Semibold.otf</string>
+		<string>SFProText-Bold.otf</string>
+		<string>SFProText-BoldItalic.otf</string>
+		<string>SFProText-Heavy.otf</string>
+		<string>SFProText-HeavyItalic.otf</string>
+		<string>SFProText-Light.otf</string>
+		<string>SFProText-LightItalic.otf</string>
+		<string>SFProText-Medium.otf</string>
+		<string>SFProText-MediumItalic.otf</string>
+		<string>SFProText-Regular.otf</string>
+		<string>SFProText-RegularItalic.otf</string>
+		<string>SFProText-Semibold.otf</string>
+		<string>SFProText-SemiboldItalic.otf</string>
 	</array>
 </dict>
 </plist>

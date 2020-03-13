@@ -8,28 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* checkLaterTheProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* checkLaterTheProjectTests.m */; };
+		0E163D6FEAC8453EB2DF3609 /* SFProText-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9E6B9CE629894741A9C15145 /* SFProText-LightItalic.otf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		1525163B6689480BBF7FEC0E /* SFProDisplay-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 55007A4154F04D41A2D2068D /* SFProDisplay-Regular.otf */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* checkLaterTheProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* checkLaterTheProjectTests.m */; };
-		4DD1E3D40C8A49EBBEB307FA /* SF-Pro-Text-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E9C3FF2D6A024599A2BC9AE9 /* SF-Pro-Text-Bold.otf */; };
-		00E9A059ABC2401095A2DFA0 /* SF-Pro-Text-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5FCEF862C18C49C98FC1A258 /* SF-Pro-Text-BoldItalic.otf */; };
-		A4899131A1994CF3A7DBACEA /* SF-Pro-Text-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6818906A9F104C8EA1FD9744 /* SF-Pro-Text-Heavy.otf */; };
-		BF0557D830384491B80E9AA5 /* SF-Pro-Text-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8A1652FF171948FEB68A397A /* SF-Pro-Text-HeavyItalic.otf */; };
-		892EB8FD117E4092BB734A80 /* SF-Pro-Text-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5FB435F363BE46A9AAD446CF /* SF-Pro-Text-Light.otf */; };
-		CF6DDE86FA22417AAE133303 /* SF-Pro-Text-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = AD39454240D2496B8FB187B0 /* SF-Pro-Text-LightItalic.otf */; };
-		8226E75162284E9989718D52 /* SF-Pro-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8B722E43538A42D1904A0B7E /* SF-Pro-Text-Medium.otf */; };
-		BE571D6069084ECB8B5B12A3 /* SF-Pro-Text-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 546D6F4C65BE4254817A4119 /* SF-Pro-Text-MediumItalic.otf */; };
-		157E638901A14304810B540F /* SF-Pro-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 486DA9F4E4A6458BAC087EAB /* SF-Pro-Text-Regular.otf */; };
-		3CC0CA8D5D7B4D03918C9B1A /* SF-Pro-Text-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = E230BCDE750F4DC1BB3012EF /* SF-Pro-Text-RegularItalic.otf */; };
-		E6F2FE2C3D124840AB79DBF6 /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FC734AEDD3224388B89634B0 /* SF-Pro-Text-Semibold.otf */; };
-		CB2386F5F89545C4A497D5EF /* SF-Pro-Text-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EAE063CD68784D3799F4622D /* SF-Pro-Text-SemiboldItalic.otf */; };
-		350E764F80AF4439B0B85FD6 /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 50985913AF4A41849553ECF4 /* SF-Pro-Display-Regular.otf */; };
-		47E3734AD90F45388519D80E /* SF-Pro-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 94A6E11B19E64058860ED180 /* SF-Pro-Display-Semibold.otf */; };
+		394D74E6E08E41C2AA1C434C /* SFProText-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9F59D69294144F4E8C6102C0 /* SFProText-RegularItalic.otf */; };
+		3A9996607E2441FCB546F2F4 /* SFProDisplay-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5E347B14A61442ADA24BA889 /* SFProDisplay-Semibold.otf */; };
+		3CF1A363E4BD4BCFBB6EE70A /* SFProText-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 765EB0438F9846D0A1D6B5BA /* SFProText-BoldItalic.otf */; };
+		5911CF8BEB4B4780922EA9A2 /* SFProText-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9EF64046A23A4A73B3CCCA12 /* SFProText-SemiboldItalic.otf */; };
+		5CD88AD0A857D9093AA5D661 /* libPods-checkLaterTheProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E07055A1968F38E760159324 /* libPods-checkLaterTheProject.a */; };
+		708C42252B74EAB33C591EC8 /* libPods-checkLaterTheProjectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 218E9BA03E93EAFFC105CE52 /* libPods-checkLaterTheProjectTests.a */; };
+		AD8FE2F887824768BED45B27 /* SFProText-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C29A75FF83F44A5BB3A39F7D /* SFProText-Semibold.otf */; };
+		B8592E6D0FE748BBB20C48F7 /* SFProText-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6BF70FAD482E40E1AEB97BE2 /* SFProText-HeavyItalic.otf */; };
+		C98C847E6E374F46B1CF6E1A /* SFProText-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 41590EE23ED44536BBFE62E2 /* SFProText-Medium.otf */; };
+		CAA264D90EB326A2C32775C2 /* libPods-checkLaterTheProject-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C5DA78AE09EBABE3FDE74E0A /* libPods-checkLaterTheProject-tvOSTests.a */; };
+		D473A33708CE26CC3FF2B0D1 /* libPods-checkLaterTheProject-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA5EA2DB17C0461796011B86 /* libPods-checkLaterTheProject-tvOS.a */; };
+		DD7A3B44DA1B43DFB0B3DD4F /* SFProText-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B419ACB41F6140BEABCF28F6 /* SFProText-Bold.otf */; };
+		DF918887160F4FEAA2E53604 /* SFProText-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9499211EA8A6483EAE9545D5 /* SFProText-MediumItalic.otf */; };
+		E45621E92EE64B188AA5767C /* SFProText-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 43489DE88B4D46219F5B5FED /* SFProText-Heavy.otf */; };
+		E530C80880AA431ABC998E47 /* SFProText-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6FFD78D3CAA8442EB927520E /* SFProText-Regular.otf */; };
+		FEE444D2B0A046A7A8556EB5 /* SFProText-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = C9794DD3B1544F75B2F18411 /* SFProText-Light.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +58,7 @@
 		00E356EE1AD99517003FC87E /* checkLaterTheProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = checkLaterTheProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* checkLaterTheProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = checkLaterTheProjectTests.m; sourceTree = "<group>"; };
+		016AD5F028D03FC9A93760D5 /* Pods-checkLaterTheProject-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-checkLaterTheProject-tvOS.release.xcconfig"; path = "Target Support Files/Pods-checkLaterTheProject-tvOS/Pods-checkLaterTheProject-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* checkLaterTheProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = checkLaterTheProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = checkLaterTheProject/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = checkLaterTheProject/AppDelegate.m; sourceTree = "<group>"; };
@@ -61,24 +66,35 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = checkLaterTheProject/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = checkLaterTheProject/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = checkLaterTheProject/main.m; sourceTree = "<group>"; };
+		218E9BA03E93EAFFC105CE52 /* libPods-checkLaterTheProjectTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-checkLaterTheProjectTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E47B1E0B4A5D006451C7 /* checkLaterTheProject-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "checkLaterTheProject-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* checkLaterTheProject-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "checkLaterTheProject-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EAAF6A322A47BC050C1349C /* Pods-checkLaterTheProject-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-checkLaterTheProject-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-checkLaterTheProject-tvOSTests/Pods-checkLaterTheProject-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		41590EE23ED44536BBFE62E2 /* SFProText-Medium.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProText-Medium.otf"; path = "../src/assets/fonts/SFProText-Medium.otf"; sourceTree = "<group>"; };
+		43489DE88B4D46219F5B5FED /* SFProText-Heavy.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProText-Heavy.otf"; path = "../src/assets/fonts/SFProText-Heavy.otf"; sourceTree = "<group>"; };
+		55007A4154F04D41A2D2068D /* SFProDisplay-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProDisplay-Regular.otf"; path = "../src/assets/fonts/SFProDisplay-Regular.otf"; sourceTree = "<group>"; };
+		55BB8C4FD1DCB1BF5275C81A /* Pods-checkLaterTheProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-checkLaterTheProject.debug.xcconfig"; path = "Target Support Files/Pods-checkLaterTheProject/Pods-checkLaterTheProject.debug.xcconfig"; sourceTree = "<group>"; };
+		5AF9D4987D621CB835FF3197 /* Pods-checkLaterTheProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-checkLaterTheProjectTests.release.xcconfig"; path = "Target Support Files/Pods-checkLaterTheProjectTests/Pods-checkLaterTheProjectTests.release.xcconfig"; sourceTree = "<group>"; };
+		5E05143707585C4C6525FE76 /* Pods-checkLaterTheProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-checkLaterTheProject.release.xcconfig"; path = "Target Support Files/Pods-checkLaterTheProject/Pods-checkLaterTheProject.release.xcconfig"; sourceTree = "<group>"; };
+		5E347B14A61442ADA24BA889 /* SFProDisplay-Semibold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProDisplay-Semibold.otf"; path = "../src/assets/fonts/SFProDisplay-Semibold.otf"; sourceTree = "<group>"; };
+		6BF70FAD482E40E1AEB97BE2 /* SFProText-HeavyItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProText-HeavyItalic.otf"; path = "../src/assets/fonts/SFProText-HeavyItalic.otf"; sourceTree = "<group>"; };
+		6FFD78D3CAA8442EB927520E /* SFProText-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProText-Regular.otf"; path = "../src/assets/fonts/SFProText-Regular.otf"; sourceTree = "<group>"; };
+		73C7798E72D4BE66DCF32DE2 /* Pods-checkLaterTheProject-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-checkLaterTheProject-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-checkLaterTheProject-tvOS/Pods-checkLaterTheProject-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		765EB0438F9846D0A1D6B5BA /* SFProText-BoldItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProText-BoldItalic.otf"; path = "../src/assets/fonts/SFProText-BoldItalic.otf"; sourceTree = "<group>"; };
+		841CFBCC72CA8F4251759130 /* Pods-checkLaterTheProject-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-checkLaterTheProject-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-checkLaterTheProject-tvOSTests/Pods-checkLaterTheProject-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		9499211EA8A6483EAE9545D5 /* SFProText-MediumItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProText-MediumItalic.otf"; path = "../src/assets/fonts/SFProText-MediumItalic.otf"; sourceTree = "<group>"; };
+		9E6B9CE629894741A9C15145 /* SFProText-LightItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProText-LightItalic.otf"; path = "../src/assets/fonts/SFProText-LightItalic.otf"; sourceTree = "<group>"; };
+		9EF64046A23A4A73B3CCCA12 /* SFProText-SemiboldItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProText-SemiboldItalic.otf"; path = "../src/assets/fonts/SFProText-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		9F59D69294144F4E8C6102C0 /* SFProText-RegularItalic.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProText-RegularItalic.otf"; path = "../src/assets/fonts/SFProText-RegularItalic.otf"; sourceTree = "<group>"; };
+		B419ACB41F6140BEABCF28F6 /* SFProText-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProText-Bold.otf"; path = "../src/assets/fonts/SFProText-Bold.otf"; sourceTree = "<group>"; };
+		C21A92754D0044E4DE3EE3B4 /* Pods-checkLaterTheProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-checkLaterTheProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-checkLaterTheProjectTests/Pods-checkLaterTheProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C29A75FF83F44A5BB3A39F7D /* SFProText-Semibold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProText-Semibold.otf"; path = "../src/assets/fonts/SFProText-Semibold.otf"; sourceTree = "<group>"; };
+		C5DA78AE09EBABE3FDE74E0A /* libPods-checkLaterTheProject-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-checkLaterTheProject-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9794DD3B1544F75B2F18411 /* SFProText-Light.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProText-Light.otf"; path = "../src/assets/fonts/SFProText-Light.otf"; sourceTree = "<group>"; };
+		DA5EA2DB17C0461796011B86 /* libPods-checkLaterTheProject-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-checkLaterTheProject-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E07055A1968F38E760159324 /* libPods-checkLaterTheProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-checkLaterTheProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		E9C3FF2D6A024599A2BC9AE9 /* SF-Pro-Text-Bold.otf */ = {isa = PBXFileReference; name = "SF-Pro-Text-Bold.otf"; path = "../src/assets/fonts/SF-Pro-Text-Bold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		5FCEF862C18C49C98FC1A258 /* SF-Pro-Text-BoldItalic.otf */ = {isa = PBXFileReference; name = "SF-Pro-Text-BoldItalic.otf"; path = "../src/assets/fonts/SF-Pro-Text-BoldItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		6818906A9F104C8EA1FD9744 /* SF-Pro-Text-Heavy.otf */ = {isa = PBXFileReference; name = "SF-Pro-Text-Heavy.otf"; path = "../src/assets/fonts/SF-Pro-Text-Heavy.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		8A1652FF171948FEB68A397A /* SF-Pro-Text-HeavyItalic.otf */ = {isa = PBXFileReference; name = "SF-Pro-Text-HeavyItalic.otf"; path = "../src/assets/fonts/SF-Pro-Text-HeavyItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		5FB435F363BE46A9AAD446CF /* SF-Pro-Text-Light.otf */ = {isa = PBXFileReference; name = "SF-Pro-Text-Light.otf"; path = "../src/assets/fonts/SF-Pro-Text-Light.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		AD39454240D2496B8FB187B0 /* SF-Pro-Text-LightItalic.otf */ = {isa = PBXFileReference; name = "SF-Pro-Text-LightItalic.otf"; path = "../src/assets/fonts/SF-Pro-Text-LightItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		8B722E43538A42D1904A0B7E /* SF-Pro-Text-Medium.otf */ = {isa = PBXFileReference; name = "SF-Pro-Text-Medium.otf"; path = "../src/assets/fonts/SF-Pro-Text-Medium.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		546D6F4C65BE4254817A4119 /* SF-Pro-Text-MediumItalic.otf */ = {isa = PBXFileReference; name = "SF-Pro-Text-MediumItalic.otf"; path = "../src/assets/fonts/SF-Pro-Text-MediumItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		486DA9F4E4A6458BAC087EAB /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; name = "SF-Pro-Text-Regular.otf"; path = "../src/assets/fonts/SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		E230BCDE750F4DC1BB3012EF /* SF-Pro-Text-RegularItalic.otf */ = {isa = PBXFileReference; name = "SF-Pro-Text-RegularItalic.otf"; path = "../src/assets/fonts/SF-Pro-Text-RegularItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		FC734AEDD3224388B89634B0 /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; name = "SF-Pro-Text-Semibold.otf"; path = "../src/assets/fonts/SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		EAE063CD68784D3799F4622D /* SF-Pro-Text-SemiboldItalic.otf */ = {isa = PBXFileReference; name = "SF-Pro-Text-SemiboldItalic.otf"; path = "../src/assets/fonts/SF-Pro-Text-SemiboldItalic.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		50985913AF4A41849553ECF4 /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; name = "SF-Pro-Display-Regular.otf"; path = "../src/assets/fonts/SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		94A6E11B19E64058860ED180 /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; name = "SF-Pro-Display-Semibold.otf"; path = "../src/assets/fonts/SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				708C42252B74EAB33C591EC8 /* libPods-checkLaterTheProjectTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CD88AD0A857D9093AA5D661 /* libPods-checkLaterTheProject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D473A33708CE26CC3FF2B0D1 /* libPods-checkLaterTheProject-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAA264D90EB326A2C32775C2 /* libPods-checkLaterTheProject-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,8 +169,27 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
+				E07055A1968F38E760159324 /* libPods-checkLaterTheProject.a */,
+				DA5EA2DB17C0461796011B86 /* libPods-checkLaterTheProject-tvOS.a */,
+				C5DA78AE09EBABE3FDE74E0A /* libPods-checkLaterTheProject-tvOSTests.a */,
+				218E9BA03E93EAFFC105CE52 /* libPods-checkLaterTheProjectTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3470050793AB0B7AB5A9A67D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55BB8C4FD1DCB1BF5275C81A /* Pods-checkLaterTheProject.debug.xcconfig */,
+				5E05143707585C4C6525FE76 /* Pods-checkLaterTheProject.release.xcconfig */,
+				73C7798E72D4BE66DCF32DE2 /* Pods-checkLaterTheProject-tvOS.debug.xcconfig */,
+				016AD5F028D03FC9A93760D5 /* Pods-checkLaterTheProject-tvOS.release.xcconfig */,
+				2EAAF6A322A47BC050C1349C /* Pods-checkLaterTheProject-tvOSTests.debug.xcconfig */,
+				841CFBCC72CA8F4251759130 /* Pods-checkLaterTheProject-tvOSTests.release.xcconfig */,
+				C21A92754D0044E4DE3EE3B4 /* Pods-checkLaterTheProjectTests.debug.xcconfig */,
+				5AF9D4987D621CB835FF3197 /* Pods-checkLaterTheProjectTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -169,6 +208,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				ACDCFAC4F1E044378DFE3E00 /* Resources */,
+				3470050793AB0B7AB5A9A67D /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -187,26 +227,25 @@
 			sourceTree = "<group>";
 		};
 		ACDCFAC4F1E044378DFE3E00 /* Resources */ = {
-			isa = "PBXGroup";
+			isa = PBXGroup;
 			children = (
-				E9C3FF2D6A024599A2BC9AE9 /* SF-Pro-Text-Bold.otf */,
-				5FCEF862C18C49C98FC1A258 /* SF-Pro-Text-BoldItalic.otf */,
-				6818906A9F104C8EA1FD9744 /* SF-Pro-Text-Heavy.otf */,
-				8A1652FF171948FEB68A397A /* SF-Pro-Text-HeavyItalic.otf */,
-				5FB435F363BE46A9AAD446CF /* SF-Pro-Text-Light.otf */,
-				AD39454240D2496B8FB187B0 /* SF-Pro-Text-LightItalic.otf */,
-				8B722E43538A42D1904A0B7E /* SF-Pro-Text-Medium.otf */,
-				546D6F4C65BE4254817A4119 /* SF-Pro-Text-MediumItalic.otf */,
-				486DA9F4E4A6458BAC087EAB /* SF-Pro-Text-Regular.otf */,
-				E230BCDE750F4DC1BB3012EF /* SF-Pro-Text-RegularItalic.otf */,
-				FC734AEDD3224388B89634B0 /* SF-Pro-Text-Semibold.otf */,
-				EAE063CD68784D3799F4622D /* SF-Pro-Text-SemiboldItalic.otf */,
-				50985913AF4A41849553ECF4 /* SF-Pro-Display-Regular.otf */,
-				94A6E11B19E64058860ED180 /* SF-Pro-Display-Semibold.otf */,
+				55007A4154F04D41A2D2068D /* SFProDisplay-Regular.otf */,
+				5E347B14A61442ADA24BA889 /* SFProDisplay-Semibold.otf */,
+				B419ACB41F6140BEABCF28F6 /* SFProText-Bold.otf */,
+				765EB0438F9846D0A1D6B5BA /* SFProText-BoldItalic.otf */,
+				43489DE88B4D46219F5B5FED /* SFProText-Heavy.otf */,
+				6BF70FAD482E40E1AEB97BE2 /* SFProText-HeavyItalic.otf */,
+				C9794DD3B1544F75B2F18411 /* SFProText-Light.otf */,
+				9E6B9CE629894741A9C15145 /* SFProText-LightItalic.otf */,
+				41590EE23ED44536BBFE62E2 /* SFProText-Medium.otf */,
+				9499211EA8A6483EAE9545D5 /* SFProText-MediumItalic.otf */,
+				6FFD78D3CAA8442EB927520E /* SFProText-Regular.otf */,
+				9F59D69294144F4E8C6102C0 /* SFProText-RegularItalic.otf */,
+				C29A75FF83F44A5BB3A39F7D /* SFProText-Semibold.otf */,
+				9EF64046A23A4A73B3CCCA12 /* SFProText-SemiboldItalic.otf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
-			path = "";
 		};
 /* End PBXGroup section */
 
@@ -215,6 +254,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "checkLaterTheProjectTests" */;
 			buildPhases = (
+				70EFEDEAF90144C0C5C161EF /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
@@ -233,6 +273,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "checkLaterTheProject" */;
 			buildPhases = (
+				78B66CE22630060BCC028D5C /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
@@ -244,7 +285,7 @@
 			dependencies = (
 			);
 			name = checkLaterTheProject;
-			productName = "checkLaterTheProject";
+			productName = checkLaterTheProject;
 			productReference = 13B07F961A680F5B00A75B9A /* checkLaterTheProject.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -252,6 +293,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "checkLaterTheProject-tvOS" */;
 			buildPhases = (
+				F32AE640CF3DE83CA8D57EE5 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
 				2D02E4771E0B4A5D006451C7 /* Sources */,
 				2D02E4781E0B4A5D006451C7 /* Frameworks */,
@@ -271,6 +313,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "checkLaterTheProject-tvOSTests" */;
 			buildPhases = (
+				9D1AC854EC283F71229758AA /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
 				2D02E48E1E0B4A5D006451C7 /* Resources */,
@@ -291,7 +334,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 940;
+				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -314,6 +357,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -344,20 +388,20 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
-				4DD1E3D40C8A49EBBEB307FA /* SF-Pro-Text-Bold.otf in Resources */,
-				00E9A059ABC2401095A2DFA0 /* SF-Pro-Text-BoldItalic.otf in Resources */,
-				A4899131A1994CF3A7DBACEA /* SF-Pro-Text-Heavy.otf in Resources */,
-				BF0557D830384491B80E9AA5 /* SF-Pro-Text-HeavyItalic.otf in Resources */,
-				892EB8FD117E4092BB734A80 /* SF-Pro-Text-Light.otf in Resources */,
-				CF6DDE86FA22417AAE133303 /* SF-Pro-Text-LightItalic.otf in Resources */,
-				8226E75162284E9989718D52 /* SF-Pro-Text-Medium.otf in Resources */,
-				BE571D6069084ECB8B5B12A3 /* SF-Pro-Text-MediumItalic.otf in Resources */,
-				157E638901A14304810B540F /* SF-Pro-Text-Regular.otf in Resources */,
-				3CC0CA8D5D7B4D03918C9B1A /* SF-Pro-Text-RegularItalic.otf in Resources */,
-				E6F2FE2C3D124840AB79DBF6 /* SF-Pro-Text-Semibold.otf in Resources */,
-				CB2386F5F89545C4A497D5EF /* SF-Pro-Text-SemiboldItalic.otf in Resources */,
-				350E764F80AF4439B0B85FD6 /* SF-Pro-Display-Regular.otf in Resources */,
-				47E3734AD90F45388519D80E /* SF-Pro-Display-Semibold.otf in Resources */,
+				1525163B6689480BBF7FEC0E /* SFProDisplay-Regular.otf in Resources */,
+				3A9996607E2441FCB546F2F4 /* SFProDisplay-Semibold.otf in Resources */,
+				DD7A3B44DA1B43DFB0B3DD4F /* SFProText-Bold.otf in Resources */,
+				3CF1A363E4BD4BCFBB6EE70A /* SFProText-BoldItalic.otf in Resources */,
+				E45621E92EE64B188AA5767C /* SFProText-Heavy.otf in Resources */,
+				B8592E6D0FE748BBB20C48F7 /* SFProText-HeavyItalic.otf in Resources */,
+				FEE444D2B0A046A7A8556EB5 /* SFProText-Light.otf in Resources */,
+				0E163D6FEAC8453EB2DF3609 /* SFProText-LightItalic.otf in Resources */,
+				C98C847E6E374F46B1CF6E1A /* SFProText-Medium.otf in Resources */,
+				DF918887160F4FEAA2E53604 /* SFProText-MediumItalic.otf in Resources */,
+				E530C80880AA431ABC998E47 /* SFProText-Regular.otf in Resources */,
+				394D74E6E08E41C2AA1C434C /* SFProText-RegularItalic.otf in Resources */,
+				AD8FE2F887824768BED45B27 /* SFProText-Semibold.otf in Resources */,
+				5911CF8BEB4B4780922EA9A2 /* SFProText-SemiboldItalic.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +450,94 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		70EFEDEAF90144C0C5C161EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-checkLaterTheProjectTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78B66CE22630060BCC028D5C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-checkLaterTheProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D1AC854EC283F71229758AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-checkLaterTheProject-tvOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F32AE640CF3DE83CA8D57EE5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-checkLaterTheProject-tvOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -512,6 +644,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C21A92754D0044E4DE3EE3B4 /* Pods-checkLaterTheProjectTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -534,6 +667,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AF9D4987D621CB835FF3197 /* Pods-checkLaterTheProjectTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -553,6 +687,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55BB8C4FD1DCB1BF5275C81A /* Pods-checkLaterTheProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
@@ -572,6 +707,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E05143707585C4C6525FE76 /* Pods-checkLaterTheProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
@@ -590,6 +726,7 @@
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73C7798E72D4BE66DCF32DE2 /* Pods-checkLaterTheProject-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -617,6 +754,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 016AD5F028D03FC9A93760D5 /* Pods-checkLaterTheProject-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -644,6 +782,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EAAF6A322A47BC050C1349C /* Pods-checkLaterTheProject-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -670,6 +809,7 @@
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 841CFBCC72CA8F4251759130 /* Pods-checkLaterTheProject-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -698,6 +838,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -751,6 +892,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
