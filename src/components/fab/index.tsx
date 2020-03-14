@@ -18,6 +18,8 @@ const Container = styled.TouchableOpacity`
     position: absolute;
     top: 88%;
     left: 80%;
+    border-width: 2px;
+    border-color: white;
 `;
 
 export const Fab: React.FC<Props> = ({ onPress }) => {

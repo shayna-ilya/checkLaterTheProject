@@ -6,7 +6,7 @@ import { images } from 'assets';
 import { SettingSectionItem } from 'components/settings-components/setting-section';
 import { DrawerNavigationProp } from '@react-navigation/drawer';
 import { useNavigation } from '@react-navigation/native';
-import { ROUTES } from '../../navigation/route-names';
+import { ROUTES } from 'navigation/route-names';
 
 type Props = {} & DrawerNavigationProp<any>;
 

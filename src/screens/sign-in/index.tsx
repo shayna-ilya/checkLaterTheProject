@@ -4,8 +4,8 @@ import { Button } from 'components/common/button';
 import { images } from 'assets';
 import { AppText } from 'components/common/app-text';
 import styled from 'styled-components/native';
-import { useNavigation } from 'react-navigation-hooks';
-import { ROUTES } from '../../navigation/route-names';
+import { useNavigation } from '@react-navigation/native';
+import { ROUTES } from 'navigation/route-names';
 
 const ScreenContainer = styled.View`
     flex: 1;
