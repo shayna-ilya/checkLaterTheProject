@@ -12,6 +12,8 @@ import { addEntry } from 'store/ducks/entries/actions';
 import { useDispatch } from 'react-redux';
 import { Category, Genre, Type } from 'types/main-screen';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { useNavigation } from '@react-navigation/native';
+import { ROUTES } from 'navigation/route-names';
 
 const Container = styled(SafeAreaView)`
     padding: 0 22px 0 22px;
@@ -46,6 +48,7 @@ export const AddScreen: React.FC = () => {
 
     const { showActionSheetWithOptions } = useActionSheet();
     const { t } = useTranslation();
+    const { navigate } = useNavigation();
 
     const genresOptions = React.useMemo(() => [...genres.map((item) => t(`genres:${item}`)), t('common:cancel')], [t]);
     const genresCancelButtonIndex = React.useMemo(() => genres.length, []);
@@ -71,6 +74,7 @@ export const AddScreen: React.FC = () => {
 
     const handleAddButtonPress = () => {
         dispatch(addEntry({ name, addDate: '123', genre: selectedGenre, category: selectedCategory, type: activeType.name }));
+        navigate(ROUTES.mainScreen);
     };
 
     return (

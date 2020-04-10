@@ -10,7 +10,7 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import { MainScreenHeader } from 'components/main-screen-header';
 import { DrawerContent } from 'components/drawer-content';
 import { Setting } from 'screens/setting';
-import { AppearanceSettingsScreen } from '../screens/setting/appearance-settings';
+import { AppearanceSettingsScreen } from 'screens/setting/appearance-settings';
 
 const MainStack = createStackNavigator();
 
