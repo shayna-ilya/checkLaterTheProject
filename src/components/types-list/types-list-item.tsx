@@ -3,6 +3,7 @@ import { ViewStyle } from 'react-native';
 import { Entry } from 'types/main-screen';
 import styled from 'styled-components/native';
 import { AppText } from 'components/common/app-text';
+import moment from 'moment';
 
 type Props = {
     data: Entry;
@@ -45,7 +46,7 @@ export const TypesListItem: React.FC<Props> = ({ data, onPress, index, style }) 
                     {data.name}
                 </AppText>
                 <AppText size={13} color="#999999">
-                    {data.addDate}
+                    {moment(data.addDate).format('DD.MM.YYYY HH:mm')}
                 </AppText>
             </DataContainer>
         </Container>

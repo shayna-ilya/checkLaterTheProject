@@ -4,6 +4,7 @@ import { Entry } from 'types/main-screen';
 import styled from 'styled-components/native';
 import { AppText } from 'components/common/app-text';
 import _ from 'lodash';
+import moment from 'moment';
 
 type Props = {
     data: Entry;
@@ -40,7 +41,7 @@ export const TypesListItemColorCard: React.FC<Props> = ({ data, onPress, index, 
                 </AppText>
                 <BottomContainer>
                     <AppText size={13} color="white">
-                        {data.addDate}
+                        {moment(data.addDate).format('DD.MM.YYYY HH:mm')}
                     </AppText>
                 </BottomContainer>
             </DataContainer>

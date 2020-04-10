@@ -9,6 +9,7 @@ import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { getBooks, getGames, getMovies } from 'store/ducks/entries/selectors';
+import { sortEntries } from 'utils/entries';
 
 const Container = styled(SafeAreaView)`
     padding-left: 18px;
@@ -30,9 +31,9 @@ export const MainScreen: React.FC = () => {
     return (
         <Container style={{ paddingTop: 0 }}>
             <ScrollView showsVerticalScrollIndicator={false}>
-                <TypesList handleShowAllPress={handleShowAllPress} title={t('movies')} data={movies} />
-                <TypesList handleShowAllPress={handleShowAllPress} title={t('books')} data={books} />
-                <TypesList handleShowAllPress={handleShowAllPress} title={t('games')} data={games} />
+                <TypesList handleShowAllPress={handleShowAllPress} title={t('movies')} data={sortEntries(movies, 'date', true)} />
+                <TypesList handleShowAllPress={handleShowAllPress} title={t('books')} data={sortEntries(books, 'date', true)} />
+                <TypesList handleShowAllPress={handleShowAllPress} title={t('games')} data={sortEntries(games, 'date', true)} />
             </ScrollView>
             <Fab onPress={handleAddButtonPress} />
         </Container>

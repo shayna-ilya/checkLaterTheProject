@@ -73,7 +73,7 @@ export const AddScreen: React.FC = () => {
     }, [categoriesCancelButtonIndex, categoriesOptions, showActionSheetWithOptions]);
 
     const handleAddButtonPress = () => {
-        dispatch(addEntry({ name, addDate: '123', genre: selectedGenre, category: selectedCategory, type: activeType.name }));
+        dispatch(addEntry({ name, addDate: Date.now(), genre: selectedGenre, category: selectedCategory, type: activeType.name }));
         navigate(ROUTES.mainScreen);
     };
 

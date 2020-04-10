@@ -12,7 +12,7 @@ export type Entry = {
     id: string;
     img: any;
     name: string;
-    addDate: string;
+    addDate: number;
     type: ContentType;
     genre: Genre;
     category: string;

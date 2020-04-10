@@ -28,8 +28,6 @@ export const MainScreenHeader: React.FC<StackHeaderProps> = ({ navigation }) => 
     const handleMenuButtonPress = React.useCallback(() => navigation.dispatch(DrawerActions.openDrawer()), [navigation]);
     const safe = useSafeArea();
 
-    console.log('safe are', safe);
-
     return (
         <Container style={{ paddingTop: safe.top, paddingBottom: 0, marginBottom: 0 }}>
             <Inner>
