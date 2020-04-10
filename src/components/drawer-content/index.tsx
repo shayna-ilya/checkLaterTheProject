@@ -5,11 +5,12 @@ import styled from 'styled-components/native';
 import { images } from 'assets';
 import { DrawerContentItem } from 'components/drawer-content/drawer-content-item';
 import { getActiveRouteName } from 'utils/navigation-utils';
+import { SafeAreaView } from 'react-native-safe-area-context';
 import { ROUTES } from 'navigation/route-names';
 
 const DrawerItemsContainer = styled.View``;
 
-const Container = styled.View`
+const Container = styled(SafeAreaView)`
     flex: 1;
     height: 100%;
 `;
