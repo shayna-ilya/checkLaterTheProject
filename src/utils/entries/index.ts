@@ -22,7 +22,6 @@ export const sortEntries = (entries: Entry[], sortBy: SortBy, reversed: boolean)
                 }
             }
 
-            // a должно быть равным b
             return 0;
         });
     }
